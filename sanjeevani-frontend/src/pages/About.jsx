@@ -10,25 +10,6 @@ import "swiper/css/pagination";
 // import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
-
-// import emergencyImg from "../assets/departments/emergency.jpg";
-// import surgeryImg from "../assets/departments/surgery.jpg";
-// import cardiologyImg from "../assets/departments/cardiology.jpg";
-// import orthoImg from "../assets/departments/ortho.jpg";
-// import pediatricsImg from "../assets/departments/pediatrics.jpg";
-// import urologyImg from "../assets/departments/urology.jpg";
-// import gynaeImg from "../assets/departments/gynae.jpg";
-// import radiologyImg from "../assets/departments/radiology.jpg";
-// import pathologyImg from "../assets/departments/pathology.jpg";
-// import oncologyImg from "../assets/departments/oncology.jpg";
-// import psychiatryImg from "../assets/departments/psychiatry.jpg";
-// import pharmacyImg from "../assets/departments/pharmacy.jpg";
-// import nephrologyImg from "../assets/departments/nephrology.jpg";
-// import gastroImg from "../assets/departments/gastro.jpg";
-// import internalMedImg from "../assets/departments/internalMed.jpg";
-// import dentalImg from "../assets/departments/dental.jpg";
-// import physioImg from "../assets/departments/physio.jpg";
-
 const About = () => {
   // const departments = [
   //   "Emergency & ICU",
@@ -52,6 +33,55 @@ const About = () => {
 
   return (
     <>
+      {/* <section className="w-full">
+        <Swiper
+          autoplay={{ delay: 3000 }}
+          loop={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          modules={[Autoplay, Navigation, Pagination]}
+          className="h-[300px] md:h-[450px] w-full"
+        >
+          {[
+            "/banners/aboutUsBanner.jpeg",
+            "/banners/hospitalFront2.jpg",
+            "/banners/hospitalStaff.jpg",
+            "/banners/hospitalICU.jpg",
+          ].map((img, i) => (
+            <SwiperSlide key={i}>
+              <div className="w-full h-full">
+                <img
+                  src={img}
+                  alt="Hospital Banner"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section> */}
+
+      {/* <section className="w-full bg-white py-12">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="/banners/hospitalImage.jpg"
+              alt="Sanjivani Multispeciality Hospital"
+              className="w-full max-h-[450px] object-cover object-center"
+            />
+          </div>
+        </div>
+      </section> */}
+      <section className="relative w-full h-[250px]">
+        <img
+          src="/banners/hospitalImage.jpg"
+          alt="Sanjivani Multispeciality Hospital"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/20"></div>{" "}
+        {/* Optional dim overlay */}
+      </section>
+
       <section className="w-full py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 items-center gap-10">
           {/* Doctor 1 */}
@@ -64,7 +94,9 @@ const About = () => {
             <p className="mt-3 text-xl font-semibold text-gray-800">
               Dr. Anwar Ali
             </p>
-            <p className="text-sm text-gray-600">(MBBS, MD)</p>
+            <p className="text-sm text-gray-600">
+              (MBBS, MS, MCH (Urology) Ex – SMS hospital jaipur)
+            </p>
           </div>
 
           {/* Center Text */}
@@ -106,6 +138,16 @@ const About = () => {
           </div>
         </div>
       </section>
+      {/* <section className="w-full bg-white py-10">
+        <div className="max-w-6xl mx-auto px-6">
+          <img
+            src="/banners/aboutUsBanner.jpeg"
+            alt="Sanjivani Multispeciality Hospital"
+            className="w-full h-80 md:h-96 object-cover rounded-xl shadow-lg"
+          />
+        </div>
+      </section> */}
+
       {/* Departments Slider Section */}
       <section className="w-full py-14 bg-white">
         <div className="max-w-6xl mx-auto px-6">
@@ -113,7 +155,7 @@ const About = () => {
             Our Hospital Departments
           </h2>
 
-          <Swiper
+          {/* <Swiper
             slidesPerView={3}
             spaceBetween={20}
             autoplay={{ delay: 2000 }}
@@ -124,36 +166,54 @@ const About = () => {
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 4 },
             }}
+          > */}
+
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={20}
+            autoplay={{ delay: 2000 }}
+            pagination={{ clickable: true }}
+            navigation={true} // <--- Enable arrows
+            modules={[Autoplay, Pagination, Navigation]} // <--- Add Navigation module
+            className="pb-20" // <--- More space for dots
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 4 },
+            }}
           >
             {[
               { name: "Emergency & ICU", img: "/departments/emergency.png" },
-              { name: "General Surgery", img: "/departments/generalSurgery.png" },
+              {
+                name: "General Surgery",
+                img: "/departments/generalSurgery.png",
+              },
               { name: "Cardiology", img: "/departments/cardiology.png" },
               { name: "Orthopedics", img: "/departments/orthopedic.png" },
               { name: "Pediatrics", img: "/departments/pediatrics.png" },
               { name: "Urology", img: "/departments/Urologist.png" },
               {
                 name: "Obstetrics & Gynecology",
-                img: "/departments/gynae.jpg",
+                img: "/departments/obstetrics&Gynecology.png",
               },
-              { name: "Radiology", img: "/departments/radiology.jpg" },
-              { name: "Pathology / Lab", img: "/departments/pathology.jpg" },
-              { name: "Oncology", img: "/departments/oncology.jpg" },
-              { name: "Psychiatry", img: "/departments/psychiatry.jpg" },
-              { name: "Pharmacy", img: "/departments/pharmacy.jpg" },
+              { name: "Radiology", img: "/departments/radiology.png" },
+              { name: "Pathology / Lab", img: "/departments/pathology.png" },
+              { name: "Oncology", img: "/departments/oncology.png" },
+              { name: "Psychiatry", img: "/departments/psychiatry.png" },
+              { name: "Pharmacy", img: "/departments/pharmacy.png" },
               {
                 name: "Nephrology & Dialysis",
-                img: "/departments/nephrology.jpg",
+                img: "/departments/nephrology.png",
               },
-              { name: "Gastroenterology", img: "/departments/gastro.jpg" },
+              { name: "Gastroenterology", img: "/departments/gastro.png" },
               {
                 name: "General / Internal Medicine",
-                img: "/departments/internalMed.jpg",
+                img: "/departments/internalMed.png",
               },
               { name: "Dental", img: "/departments/dental.jpg" },
               {
                 name: "Physiotherapy & Rehabilitation",
-                img: "/departments/physio.jpg",
+                img: "/departments/physio.png",
               },
             ].map((dept, index) => (
               <SwiperSlide key={index} className="text-center">
@@ -166,6 +226,120 @@ const About = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+      </section>
+      {/* <section className="w-full py-16 bg-gradient-to-r from-blue-50 to-blue-100">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-blue-700 mb-10">
+            Hospital Facilities
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "24/7 Emergency Services",
+                icon: "/icons/emergency.png",
+              },
+              { title: "Fully Equipped ICU", icon: "/icons/icu.png" },
+              { title: "Modular Operation Theaters", icon: "/icons/ot.png" },
+              { title: "Advanced Diagnostic Lab", icon: "/icons/lab.png" },
+              { title: "Digital X-Ray & Ultrasound", icon: "/icons/xray.png" },
+              { title: "Pharmacy Available 24/7", icon: "/icons/pharmacy.png" },
+              { title: "Ambulance Service", icon: "/icons/ambulance.png" },
+              {
+                title: "Patient Rooms & Private Wards",
+                icon: "/icons/rooms.png",
+              },
+              {
+                title: "Physiotherapy & Rehabilitation",
+                icon: "/icons/physio.png",
+              },
+            ].map((facility, idx) => (
+              <div
+                key={idx}
+                className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center 
+          hover:shadow-2xl hover:scale-105 hover:border-blue-500 border transition-all duration-300"
+              >
+                <img
+                  src={facility.icon}
+                  alt={facility.title}
+                  className="w-16 h-16 mb-4"
+                />
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {facility.title}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
+
+      {/* Hospital Facilities Section */}
+      <section className="w-full py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center text-blue-700 mb-10">
+            Hospital Facilities
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "100 Bedded Hospital",
+                img: "/facilities/bededHospital.png",
+              },
+              {
+                title: "Well Equipped Advanced ICU",
+                img: "/facilities/wellEquippedAdvancedICU.png",
+              },
+              {
+                title: "Modular Operation Theatres",
+                img: "/facilities/ot.png",
+              },
+              {
+                title: "24 × 7 Emergency & Trauma Care",
+                img: "/facilities/emergency.png",
+              },
+              {
+                title: "NICU & PICU",
+                img: "/facilities/nicu&picu.png",
+              },
+              {
+                title: "Radiology (CT, X-Ray, Sonography)",
+                img: "/facilities/radiology-xray.png",
+              },
+              { title: "Dialysis Center", img: "/facilities/dialysis.png" },
+              {
+                title: "Advanced Laboratory Services",
+                img: "/facilities/lab.png",
+              },
+              { title: "24/7 Pharmacy", img: "/facilities/pharmacy.png" },
+              { title: "Ambulance Service", img: "/facilities/ambulance.png" },
+              {
+                title: "Centrally Air-Conditioned Rooms",
+                img: "/facilities/rooms.png",
+              },
+              {
+                title: "Labour & Delivery Room",
+                img: "/facilities/labourRoom.png",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-md hover:shadow-xl transition border border-gray-200 overflow-hidden"
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4 text-center">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {item.title}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

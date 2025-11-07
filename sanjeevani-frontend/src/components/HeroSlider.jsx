@@ -8,7 +8,7 @@ const HeroSlider = () => {
       
       <Carousel.Item>
         <img
-          className="w-full h-[550px] object-cover"
+          className="w-full h-[550px] object-cover object-center"
           src="banner1.png"
           alt="First slide"
         />
@@ -20,7 +20,7 @@ const HeroSlider = () => {
 
       <Carousel.Item>
         <img
-          className="w-full h-[550px] object-cover"
+         className="w-full h-[550px] object-cover object-center"
           src="banner2.png"
           alt="Second slide"
         />
@@ -32,7 +32,7 @@ const HeroSlider = () => {
 
       <Carousel.Item>
         <img
-          className="w-full h-[550px] object-cover"
+          className="w-full h-[550px] object-cover object-center"
           src="banner3.png"
           alt="Third slide"
         />

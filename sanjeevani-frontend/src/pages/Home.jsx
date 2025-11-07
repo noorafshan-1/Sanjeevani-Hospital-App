@@ -3,6 +3,7 @@ import HeroSlider from "../components/HeroSlider";
 import About from "../pages/About";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Departments from "../pages/Departments";
+import DepartmentSection from "../components/DepartmentSection";
 import Doctors from "../pages/Doctors";
 import Contact from "../pages/Contact";
 import { Link } from "react-router-dom";
@@ -11,13 +12,13 @@ const Home = () => {
   return (
     <>
       <HeroSlider />
-      <About />
+      {/* <About /> */}
 
       <section
         className="w-full h-[90vh] bg-cover bg-center relative flex items-center"
-        style={{
-          backgroundImage: "url('/hospital-bg.png')",
-        }}
+        // style={{
+        //   backgroundImage: "url('/hospital-bg.png')",
+        // }}
       >
         {/* Overlay (light transparent) */}
         <div className="absolute inset-0 bg-white/60"></div>
@@ -44,7 +45,8 @@ const Home = () => {
         </div>
       </section>
       <WhyChooseUs />
-      <Departments />
+      {/* <Departments /> */}
+      <DepartmentSection />
       <Doctors />
       <Contact />
     </>

@@ -14,6 +14,21 @@ const DepartmentDetail = () => {
 
   return (
     <>
+      {/* <img
+        src={department.image}
+        alt={department.title}
+        className="w-full max-h-80 object-cover rounded-lg mb-6"
+      /> */}
+      <section className="w-full">
+        <div className="w-full h-[380px] md:h-[480px] lg:h-[520px] overflow-hidden">
+          <img
+            src={department.image}
+            alt={department.title}
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
+      </section>
+
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-blue-700 mb-6 text-center">
           {department.title}
@@ -32,11 +47,6 @@ const DepartmentDetail = () => {
           </a>
         </div>
       </section>
-      <img
-        src={department.image}
-        alt={department.title}
-        className="w-full max-h-80 object-cover rounded-lg mb-6"
-      />
     </>
   );
 };

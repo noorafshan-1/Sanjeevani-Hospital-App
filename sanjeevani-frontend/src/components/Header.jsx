@@ -12,7 +12,7 @@ const Header = () => {
     <>
       {/* Top Contact Bar */}
       <div className="w-full bg-blue-600 text-white text-center text-sm py-1">
-        Call Us: +91 9999999999 | Email: info@sanjeevanihospital.com
+        Call Us: 01504-222100 | Email: smshospitalbhadra2025@gmail.com
       </div>
 
       {/* Main Navbar */}
@@ -27,7 +27,7 @@ const Header = () => {
             />
             <div>
               <h2 className="text-blue-700 font-bold text-lg">
-                Sanjeevani Hospital
+                Sanjivani multispeciality Hospital
               </h2>
               <p className="text-xs text-gray-600 -mt-1">
                 Multispeciality Care
@@ -74,11 +74,41 @@ const Header = () => {
                 ))}
               </div>
             </li> */}
-            <div className="relative group">
+            {/* <div className="relative group">
               <span className="cursor-pointer hover:text-blue-600 flex items-center gap-1">
                 Departments <span>▼</span>
               </span>
 
+              <div className="absolute hidden group-hover:block bg-white shadow-lg top-full left-0 w-60 rounded-md border z-50">
+                {departments.map((dep) => (
+                  <Link
+                    key={dep.slug}
+                    to={`/departments/${dep.slug}`}
+                    className="block px-4 py-2 text-sm hover:bg-blue-100"
+                  >
+                    {dep.title}
+                  </Link>
+                ))}
+              </div>
+            </div> */}
+            {/* Departments Menu */}
+            <div className="relative group flex items-center gap-1">
+              {/* Clicking this goes to Department Main Page */}
+              <Link
+                to="/departments"
+                className={`${navItem} ${
+                  location.pathname.startsWith("/departments")
+                    ? "text-blue-600 border-b-2 border-blue-600"
+                    : ""
+                }`}
+              >
+                Departments
+              </Link>
+
+              {/* Dropdown Arrow */}
+              <span className="cursor-pointer hover:text-blue-600">▼</span>
+
+              {/* Dropdown Menu */}
               <div className="absolute hidden group-hover:block bg-white shadow-lg top-full left-0 w-60 rounded-md border z-50">
                 {departments.map((dep) => (
                   <Link

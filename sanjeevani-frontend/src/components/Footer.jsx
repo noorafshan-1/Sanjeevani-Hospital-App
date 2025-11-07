@@ -12,10 +12,8 @@ const Footer = () => {
   return (
     <footer className="bg-[#003E7E] text-white mt-10">
       <div className="max-w-6xl mx-auto px-6 py-10">
-
         {/* Top Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-
           {/* Contact */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
@@ -52,25 +50,40 @@ const Footer = () => {
               <li>Dr. Aslam</li>
             </ul>
           </div>
-
         </div>
 
         {/* Divider */}
         <div className="border-t border-white/30 mt-8 pt-6 flex flex-col items-center">
-
           {/* Social */}
           <div className="flex gap-5 mb-4">
-            <a href="#" className="hover:text-yellow-400 transition"><FaFacebook size={22} /></a>
-            <a href="#" className="hover:text-yellow-400 transition"><FaInstagram size={22} /></a>
-            <a href="#" className="hover:text-yellow-400 transition"><FaYoutube size={22} /></a>
+            <a href="#" className="hover:text-yellow-400 transition">
+              <FaFacebook size={22} />
+            </a>
+            <a href="#" className="hover:text-yellow-400 transition">
+              <FaInstagram size={22} />
+            </a>
+            <a href="#" className="hover:text-yellow-400 transition">
+              <FaYoutube size={22} />
+            </a>
           </div>
 
           {/* Copyright */}
-          <p className="text-xs text-center">
+          {/* <p className="text-xs text-center">
             © 2025 Sanjivani Hospital. Designed & Developed by <b>Star Marketing</b>.
+          </p> */}
+          <p className="text-xs text-center">
+            © 2025 Sanjivani multispeciality Hospital. Designed & Developed by{" "}
+            <a
+              href="https://wingstarnarketing.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold hover:text-yellow-400 transition"
+            >
+              Star Marketing
+            </a>
+            .
           </p>
         </div>
-
       </div>
     </footer>
   );
