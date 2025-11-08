@@ -105,7 +105,6 @@ const About = () => {
           />
         </div>
       </section> */}
-
       <HospitalGallery />
 
       {/* Departments Slider Section */}
