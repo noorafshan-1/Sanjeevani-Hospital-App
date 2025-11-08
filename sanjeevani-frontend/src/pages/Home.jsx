@@ -72,7 +72,6 @@ const Home = () => {
       {/* If you want a slider of multiple hospital images */}
 
       <HospitalGallery />
-
       {/* <Departments /> */}
       <DepartmentSection />
       <Doctors />
