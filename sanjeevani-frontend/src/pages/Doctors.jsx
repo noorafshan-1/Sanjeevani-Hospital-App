@@ -11,22 +11,22 @@ const doctors = [
     name: "Dr. Anwar Ali",
     specialty:
       "    MBBS, MS, MCH             (Urology) Ex –  SMS Hospital jaipur",
-    image: "/doctors/Dr.Anwar Ali.jpeg",
+    image: "/doctors/anwarali.jpeg",
   },
   {
     name: "Dr. Satveer Choudhary",
     specialty: "MBBS, DNB Orthopedic Specialist",
-    image: "/doctors/Dr.Satveer Chaudhary.jpeg",
+    image: "/doctors/satveerchaudhary.jpeg",
   },
   {
     name: "Dr. Anil Khyaliya",
     specialty: "MBBS, MS, MCh (Neurosurgeon) Ex – SMS Jaipur & MDM Jodhpur",
-    image: "/doctors/Dr. Anil Khyaliya.jpeg",
+    image: "/doctors/anilkhyaliya.jpeg",
   },
   {
     name: "Dr. Aslam (PT)",
     specialty: "BPT (Ex. SMS Hospital) Physiotherapist",
-    image: "/doctors/Dr. Aslam (PT).jpeg",
+    image: "/doctors/aslam.jpeg",
   },
 ];
 

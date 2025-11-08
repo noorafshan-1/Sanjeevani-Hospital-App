@@ -99,7 +99,7 @@ const About = () => {
       {/* <section className="w-full bg-white py-10">
         <div className="max-w-6xl mx-auto px-6">
           <img
-            src="/banners/aboutUsBanner.jpeg"
+            src="/banners/aboutusbanner.jpeg"
             alt="Sanjivani Multispeciality Hospital"
             className="w-full h-80 md:h-96 object-cover rounded-xl shadow-lg"
           />
