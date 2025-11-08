@@ -5,7 +5,6 @@ const HeroSlider = () => {
   
   return (
     <Carousel fade interval={3000}>
-      
       <Carousel.Item>
         <img
           className="w-full h-[550px] object-cover object-center"

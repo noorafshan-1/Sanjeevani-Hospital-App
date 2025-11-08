@@ -34,7 +34,7 @@ const About = () => {
     <>
       <section className="relative w-full h-[250px]">
         <img
-          src="/banners/hospitalImage.jpg"
+          src="/banners/hospitalimage.jpg"
           alt="Sanjivani Multispeciality Hospital"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />

@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 
 const HospitalGallery = () => {
   const slides = [
-    "/banners/hospitalImage1.jpeg",
+    "/banners/hospitalimage1.jpeg",
     // "/banners/hospitalImage2.jpg",
     // "/banners/hospitalImage3.jpg",
   ];

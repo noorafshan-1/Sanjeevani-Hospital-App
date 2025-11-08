@@ -44,9 +44,9 @@ const Doctors = () => {
           className="h-[380px] md:h-[550px] w-full"
         >
           {[
-            "/banners/ourDoctors1.jpg",
-            "/banners/ourDoctors2.jpg",
-            "/banners/ourDoctors3.jpg",
+            "/banners/ourdoctors1.jpg",
+            "/banners/ourdoctors2.jpg",
+            "/banners/ourdoctors3.jpg",
           ].map((img, i) => (
             <SwiperSlide key={i}>
               <div className="w-full h-full relative">
