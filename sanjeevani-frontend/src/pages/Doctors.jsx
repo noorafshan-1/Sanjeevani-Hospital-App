@@ -9,7 +9,8 @@ import "swiper/css/pagination";
 const doctors = [
   {
     name: "Dr. Anwar Ali",
-    specialty: "    MBBS, MS, MCH             (Urology) Ex –  SMS Hospital jaipur",
+    specialty:
+      "    MBBS, MS, MCH             (Urology) Ex –  SMS Hospital jaipur",
     image: "/doctors/Dr.Anwar Ali.jpeg",
   },
   {
@@ -46,7 +47,6 @@ const Doctors = () => {
             "/banners/ourDoctors1.jpg",
             "/banners/ourDoctors2.jpg",
             "/banners/ourDoctors3.jpg",
-            {/* "/banners/hospitalICU.jpg", */}
           ].map((img, i) => (
             <SwiperSlide key={i}>
               <div className="w-full h-full relative">

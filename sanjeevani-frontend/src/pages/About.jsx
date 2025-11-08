@@ -4,12 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
 import "swiper/css/pagination";
-
-// import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
+import HospitalGallery from "../components/HospitalGallery";
+
 const About = () => {
   // const departments = [
   //   "Emergency & ICU",
@@ -33,45 +32,6 @@ const About = () => {
 
   return (
     <>
-      {/* <section className="w-full">
-        <Swiper
-          autoplay={{ delay: 3000 }}
-          loop={true}
-          navigation={true}
-          pagination={{ clickable: true }}
-          modules={[Autoplay, Navigation, Pagination]}
-          className="h-[300px] md:h-[450px] w-full"
-        >
-          {[
-            "/banners/aboutUsBanner.jpeg",
-            "/banners/hospitalFront2.jpg",
-            "/banners/hospitalStaff.jpg",
-            "/banners/hospitalICU.jpg",
-          ].map((img, i) => (
-            <SwiperSlide key={i}>
-              <div className="w-full h-full">
-                <img
-                  src={img}
-                  alt="Hospital Banner"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </section> */}
-
-      {/* <section className="w-full bg-white py-12">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="rounded-2xl overflow-hidden shadow-2xl">
-            <img
-              src="/banners/hospitalImage.jpg"
-              alt="Sanjivani Multispeciality Hospital"
-              className="w-full max-h-[450px] object-cover object-center"
-            />
-          </div>
-        </div>
-      </section> */}
       <section className="relative w-full h-[250px]">
         <img
           src="/banners/hospitalImage.jpg"
@@ -98,8 +58,6 @@ const About = () => {
               (MBBS, MS, MCH (Urology) Ex – SMS hospital jaipur)
             </p>
           </div>
-
-          {/* Center Text */}
           {/* Center Text */}
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-blue-700">
@@ -147,6 +105,8 @@ const About = () => {
           />
         </div>
       </section> */}
+
+      <HospitalGallery />
 
       {/* Departments Slider Section */}
       <section className="w-full py-14 bg-white">
@@ -217,63 +177,27 @@ const About = () => {
               },
             ].map((dept, index) => (
               <SwiperSlide key={index} className="text-center">
-                <img
+                {/* <img
                   src={dept.img}
                   alt={dept.name}
                   className="w-full h-48 object-cover rounded-lg shadow"
-                />
-                <p className="mt-2 font-medium">{dept.name}</p>
+                /> */}
+                <div className="w-full bg-white rounded-lg shadow p-2">
+                  <img
+                    src={dept.img}
+                    alt={dept.name}
+                    className="w-full h-[180px] md:h-[220px] object-contain rounded-md"
+                  />
+                </div>
+                <p className="mt-3 font-semibold text-gray-800 text-sm md:text-base">
+                  {dept.name}
+                </p>
+                {/* <p className="mt-2 font-medium">{dept.name}</p> */}
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </section>
-      {/* <section className="w-full py-16 bg-gradient-to-r from-blue-50 to-blue-100">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-blue-700 mb-10">
-            Hospital Facilities
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "24/7 Emergency Services",
-                icon: "/icons/emergency.png",
-              },
-              { title: "Fully Equipped ICU", icon: "/icons/icu.png" },
-              { title: "Modular Operation Theaters", icon: "/icons/ot.png" },
-              { title: "Advanced Diagnostic Lab", icon: "/icons/lab.png" },
-              { title: "Digital X-Ray & Ultrasound", icon: "/icons/xray.png" },
-              { title: "Pharmacy Available 24/7", icon: "/icons/pharmacy.png" },
-              { title: "Ambulance Service", icon: "/icons/ambulance.png" },
-              {
-                title: "Patient Rooms & Private Wards",
-                icon: "/icons/rooms.png",
-              },
-              {
-                title: "Physiotherapy & Rehabilitation",
-                icon: "/icons/physio.png",
-              },
-            ].map((facility, idx) => (
-              <div
-                key={idx}
-                className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center 
-          hover:shadow-2xl hover:scale-105 hover:border-blue-500 border transition-all duration-300"
-              >
-                <img
-                  src={facility.icon}
-                  alt={facility.title}
-                  className="w-16 h-16 mb-4"
-                />
-                <h3 className="text-lg font-semibold text-gray-800">
-                  {facility.title}
-                </h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       {/* Hospital Facilities Section */}
       <section className="w-full py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">

@@ -1,27 +1,3 @@
-// import { Link } from "react-router-dom";
-// import departments from "../data/departments";
-// import DepartmentCard from "../components/DepartmentCard";
-
-// const Departments = () => {
-//   return (
-//     <section className="py-12 px-6 md:px-16 bg-gray-50">
-//       <h2 className="text-center text-4xl font-bold text-blue-700 mb-8">
-//         Our Medical Departments
-//       </h2>
-
-//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-//         {departments.map((dep, index) => (
-//           <Link to={`/departments/${dep.slug}`} key={index}>
-//             <DepartmentCard image={dep.image} title={dep.title} />
-//           </Link>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Departments;
-
 import React from "react";
 import departments from "../data/departments";
 import { Link } from "react-router-dom";

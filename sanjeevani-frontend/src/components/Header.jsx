@@ -57,40 +57,7 @@ const Header = () => {
             >
               About Us
             </Link>
-            {/* <li className="relative group">
-              <span className="cursor-pointer hover:text-blue-600">
-                Departments ▼
-              </span>
 
-              <div className="absolute hidden group-hover:block bg-white shadow-lg top-full left-0 w-56 z-50">
-                {departments.map((dep) => (
-                  <Link
-                    key={dep.slug}
-                    to={`/departments/${dep.slug}`}
-                    className="block px-4 py-2 text-sm hover:bg-blue-100"
-                  >
-                    {dep.title}
-                  </Link>
-                ))}
-              </div>
-            </li> */}
-            {/* <div className="relative group">
-              <span className="cursor-pointer hover:text-blue-600 flex items-center gap-1">
-                Departments <span>▼</span>
-              </span>
-
-              <div className="absolute hidden group-hover:block bg-white shadow-lg top-full left-0 w-60 rounded-md border z-50">
-                {departments.map((dep) => (
-                  <Link
-                    key={dep.slug}
-                    to={`/departments/${dep.slug}`}
-                    className="block px-4 py-2 text-sm hover:bg-blue-100"
-                  >
-                    {dep.title}
-                  </Link>
-                ))}
-              </div>
-            </div> */}
             {/* Departments Menu */}
             <div className="relative group flex items-center gap-1">
               {/* Clicking this goes to Department Main Page */}

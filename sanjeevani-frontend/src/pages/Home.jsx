@@ -5,6 +5,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Departments from "../pages/Departments";
 import DepartmentSection from "../components/DepartmentSection";
 import Doctors from "../pages/Doctors";
+import HospitalGallery from "../components/HospitalGallery";
 import Contact from "../pages/Contact";
 import { Link } from "react-router-dom";
 
@@ -45,6 +46,33 @@ const Home = () => {
         </div>
       </section>
       <WhyChooseUs />
+      {/* Hospital Image Section */}
+      {/* <section className="w-full py-10">
+        <div className="max-w-6xl mx-auto px-6">
+          <img
+            src="/hospital-building.jpeg" // Change to your image path
+            alt="Our Hospital"
+            className="w-full h-[300px] md:h-[450px] object-cover rounded-xl shadow-lg"
+          />
+        </div>
+      </section> */}
+
+      {/* If you want a heading above the image, use this:*/}
+      {/* <section className="w-full py-10 text-center">
+        <h2 className="text-3xl font-bold text-blue-700 mb-6">Our Hospital</h2>
+        <div className="max-w-6xl mx-auto px-6">
+          <img
+            src="/hospital-building.jpeg"
+            alt="Hospital"
+            className="w-full h-[500px] md:h-[450px] object-cover rounded-xl shadow-lg"
+          />
+        </div>
+      </section> */}
+
+      {/* If you want a slider of multiple hospital images */}
+
+      <HospitalGallery />
+
       {/* <Departments /> */}
       <DepartmentSection />
       <Doctors />
