@@ -152,10 +152,7 @@ const About = () => {
               { name: "Orthopedics", img: "/departments/orthopedic.png" },
               { name: "Pediatrics", img: "/departments/pediatrics.png" },
               { name: "Urology", img: "/departments/Urologist.png" },
-              {
-                name: "Obstetrics & Gynecology",
-                img: "/departments/obstetrics&Gynecology.png",
-              },
+              {name: "Obstetrics & Gynecology",img: "/departments/obstetrics&Gynecology.png" },
               { name: "Radiology", img: "/departments/radiology.png" },
               { name: "Pathology / Lab", img: "/departments/pathology.png" },
               { name: "Oncology", img: "/departments/oncology.png" },
