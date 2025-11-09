@@ -1,5 +1,6 @@
 import React from "react";
-
+import departments from "../data/departments";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -105,7 +106,7 @@ const About = () => {
           />
         </div>
       </section> */}
-      
+
       <HospitalGallery />
 
       {/* Departments Slider Section */}
@@ -142,7 +143,7 @@ const About = () => {
               1024: { slidesPerView: 4 },
             }}
           >
-            {[
+            {/* {[
               { name: "Emergency & ICU", img: "/departments/emergency.png" },
               {
                 name: "General Surgery",
@@ -152,7 +153,10 @@ const About = () => {
               { name: "Orthopedics", img: "/departments/orthopedic.png" },
               { name: "Pediatrics", img: "/departments/pediatrics.png" },
               { name: "Urology", img: "/departments/Urologist.png" },
-              {name: "Obstetrics & Gynecology",img: "/departments/obstetrics&Gynecology.png" },
+              {
+                name: "Obstetrics & Gynecology",
+                img: "/departments/obstetrics&Gynecology.png",
+              },
               { name: "Radiology", img: "/departments/radiology.png" },
               { name: "Pathology / Lab", img: "/departments/pathology.png" },
               { name: "Oncology", img: "/departments/oncology.png" },
@@ -172,24 +176,29 @@ const About = () => {
                 name: "Physiotherapy & Rehabilitation",
                 img: "/departments/physio.png",
               },
-            ].map((dept, index) => (
+            ].map((dept, index) => ( */}
+
+            {departments.map((dept, index) => (
               <SwiperSlide key={index} className="text-center">
                 {/* <img
                   src={dept.img}
                   alt={dept.name}
                   className="w-full h-48 object-cover rounded-lg shadow"
                 /> */}
-                <div className="w-full bg-white rounded-lg shadow p-2">
-                  <img
-                    src={dept.img}
-                    alt={dept.name}
-                    className="w-full h-[180px] md:h-[220px] object-contain rounded-md"
-                  />
-                </div>
-                <p className="mt-3 font-semibold text-gray-800 text-sm md:text-base">
-                  {dept.name}
-                </p>
-                {/* <p className="mt-2 font-medium">{dept.name}</p> */}
+                <Link to={`/departments/${dept.slug}`}>
+                  <div className="w-full bg-white rounded-lg shadow hover:shadow-xl transition p-2">
+                    {/* <div className="w-full bg-white rounded-lg shadow p-2"> */}
+                    <img
+                      src={dept.image} // ✅ Correct key
+                      alt={dept.title}
+                      className="w-full h-[180px] md:h-[220px] object-contain rounded-md"
+                    />
+                  </div>
+                  <p className="mt-3 font-semibold text-gray-800 text-sm md:text-base">
+                    {dept.title}
+                  </p>
+                  {/* <p className="mt-2 font-medium">{dept.name}</p> */}
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

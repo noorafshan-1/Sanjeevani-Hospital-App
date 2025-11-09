@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import departments from "../data/departments";
+import { Link } from "react-router-dom";
 
 const DepartmentDetail = () => {
   const { slug } = useParams();
@@ -39,12 +40,18 @@ const DepartmentDetail = () => {
         </p>
 
         <div className="text-center mt-10">
-          <a
+          {/* <a
             href="tel:+919999999999"
             className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow hover:bg-blue-700 transition"
           >
             Book Appointment
-          </a>
+          </a> */}
+          <Link
+            to="/appointment"
+            className="mt-3 md:mt-0 bg-blue-800 hover:bg-blue-900 px-5 py-2 rounded-full font-semibold transition text-white"
+          >
+            Book Appointment
+          </Link>
         </div>
       </section>
     </>

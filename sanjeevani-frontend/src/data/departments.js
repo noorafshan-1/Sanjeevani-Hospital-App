@@ -32,7 +32,7 @@ const departments = [
   {
     title: "Urology",
     slug: "urology",
-    image: "/departments/Urologist.png",
+    image: "/departments/urologist.png",
     description: "This department diagnoses and treats urinary tract issues, kidney stones, infections, and male reproductive concerns. We provide both medical and surgical care for healthy urinary function."
   },
   {

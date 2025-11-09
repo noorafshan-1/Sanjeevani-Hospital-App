@@ -16,7 +16,7 @@ const Home = () => {
       {/* <About /> */}
 
       <section
-        className="w-full h-[90vh] bg-cover bg-center relative flex items-center"
+        className="w-full h-[70vh] bg-cover bg-center relative flex items-center"
         // style={{
         //   backgroundImage: "url('/hospital-bg.png')",
         // }}
