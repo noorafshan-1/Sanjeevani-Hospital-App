@@ -7,15 +7,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const doctors = [
+  // {
+  //   name: "Dr. Anwar Ali",
+  //   specialty:"MBBS,MS,MCH (Urology) Ex –  SMS Hospital jaipur",
+  //   image: "/doctors/anwarali.jpeg",
+  // },
   {
     name: "Dr. Anwar Ali",
-    specialty:
-      "    MBBS, MS, MCH             (Urology) Ex –  SMS Hospital jaipur",
+    specialty: "MBBS ,MS,MCH (Urology)  Ex – SMS Hospital Jaipur",
     image: "/doctors/anwarali.jpeg",
   },
+
   {
     name: "Dr. Satveer Choudhary",
-    specialty: "MBBS, DNB Orthopedic Specialist",
+    specialty: "MBBS, DNB Orthopedic Specialist Ex – RML Hospital Delhi",
     image: "/doctors/satveerchaudhary.jpeg",
   },
   {
@@ -25,7 +30,7 @@ const doctors = [
   },
   {
     name: "Dr. Aslam (PT)",
-    specialty: "BPT (Ex. SMS Hospital) Physiotherapist",
+    specialty: " BPT (Physiotherapist) Ex – SMS Hospital",
     image: "/doctors/aslam.jpeg",
   },
 ];
