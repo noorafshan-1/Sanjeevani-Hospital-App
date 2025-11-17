@@ -56,7 +56,7 @@ const About = () => {
               Dr. Anwar Ali
             </p>
             <p className="text-sm text-gray-600">
-              (MBBS, MS, MCH (Urology) Ex – SMS hospital jaipur)
+              (MBBS, MS, MCH (Urology) Ex – SMS Hospital Jaipur)
             </p>
           </div>
           {/* Center Text */}
@@ -93,7 +93,10 @@ const About = () => {
             <p className="mt-3 text-xl font-semibold text-gray-800">
               Dr. Satveer Choudhary
             </p>
-            <p className="text-sm text-gray-600">(MBBS, MS Ortho)</p>
+            <p className="text-sm text-gray-600">
+              (MBBS,DNB,Orthopedic Surgeon)
+            </p>
+            <p className="text-sm text-gray-600">(RML Hospital Delhi)</p>
           </div>
         </div>
       </section>

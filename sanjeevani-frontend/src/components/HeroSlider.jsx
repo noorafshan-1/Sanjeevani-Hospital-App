@@ -3,53 +3,46 @@ import { Carousel } from "react-bootstrap";
 
 const HeroSlider = () => {
   return (
-    <Carousel fade interval={3000}>
+    <Carousel fade interval={3000} controls indicators>
       <Carousel.Item>
-        <img
-          className="w-full md:h-[650px] h-[450px] object-cover"
-          src="banner1.jpeg"
-          alt="First slide"
-        />
-        <Carousel.Caption className="bg-black/40 p-4 rounded">
-          {/* <h2 className="text-3xl md:text-4xl font-bold">Your Health is Our Priority</h2>
-          <p className="text-sm md:text-lg">24/7 Multispeciality Healthcare with Trusted Doctors</p> */}
-        </Carousel.Caption>
+        <div className="w-full h-[210px] md:h-[620px] overflow-hidden relative">
+          <img
+            // className="w-full md:h-[650px] h-[450px] object-cover"
+            className="w-full h-full object-cover object-center"
+            src="banner1.jpeg"
+            alt="First slide"
+          />
+        </div>
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
-          className="w-full md:h-[650px] h-[450px] object-cover"
-          src="banner2.jpeg"
-          alt="Second slide"
-        />
-        <Carousel.Caption className="bg-black/40 p-4 rounded">
-          {/* <h2 className="text-3xl md:text-4xl font-bold">Advanced Medical Facilities</h2>
-          <p className="text-sm md:text-lg">Modern equipment & experienced specialists</p> */}
-        </Carousel.Caption>
+        <div className="w-full h-[210px] md:h-[620px] overflow-hidden relative">
+          <img
+            className="w-full h-full object-cover object-center"
+            src="banner2.jpeg"
+            alt="Second slide"
+          />
+        </div>
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
-          className="w-full md:h-[650px] h-[450px] object-cover"
-          src="banner3.jpeg"
-          alt="Third slide"
-        />
-        <Carousel.Caption className="bg-black/40 p-4 rounded">
-          {/* <h2 className="text-3xl md:text-4xl font-bold">Compassionate Patient Care</h2>
-          <p className="text-sm md:text-lg">We care for you like family</p> */}
-        </Carousel.Caption>
+        <div className="w-full h-[210px] md:h-[620px] overflow-hidden relative">
+          <img
+            className="w-full h-full object-cover object-center"
+            src="banner3.jpeg"
+            alt="Third slide"
+          />
+        </div>
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
-          className="w-full md:h-[650px] h-[450px] object-cover"
-          src="banner4.jpeg"
-          alt="Third slide"
-        />
-        <Carousel.Caption className="bg-black/40 p-4 rounded">
-          {/* <h2 className="text-3xl md:text-4xl font-bold">Compassionate Patient Care</h2>
-          <p className="text-sm md:text-lg">We care for you like family</p> */}
-        </Carousel.Caption>
+        <div className="w-full h-[210px] md:h-[620px] overflow-hidden relative">
+          <img
+            className="w-full h-full object-cover object-center"
+            src="banner4.jpeg"
+            alt="Third slide"
+          />
+        </div>
       </Carousel.Item>
     </Carousel>
   );
