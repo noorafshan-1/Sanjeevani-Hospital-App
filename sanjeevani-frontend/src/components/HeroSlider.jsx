@@ -8,7 +8,11 @@ const HeroSlider = () => {
         <div className="w-full h-[210px] md:h-[620px] overflow-hidden relative">
           <img
             // className="w-full md:h-[650px] h-[450px] object-cover"
-            className="w-full h-full object-cover object-center"
+            // className="w-full h-full object-cover object-center"
+            className="w-full h-full 
+                object-contain     // show full image on mobile
+                md:object-cover    // crop nicely on desktop
+                md:object-center"
             src="banner1.jpeg"
             alt="First slide"
           />
@@ -18,7 +22,7 @@ const HeroSlider = () => {
       <Carousel.Item>
         <div className="w-full h-[210px] md:h-[620px] overflow-hidden relative">
           <img
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-contain md:object-cover md:object-center"
             src="banner2.jpeg"
             alt="Second slide"
           />
@@ -28,7 +32,7 @@ const HeroSlider = () => {
       <Carousel.Item>
         <div className="w-full h-[210px] md:h-[620px] overflow-hidden relative">
           <img
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-contain md:object-cover md:object-center"
             src="banner3.jpeg"
             alt="Third slide"
           />
@@ -38,7 +42,7 @@ const HeroSlider = () => {
       <Carousel.Item>
         <div className="w-full h-[210px] md:h-[620px] overflow-hidden relative">
           <img
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-contain md:object-cover md:object-center"
             src="banner4.jpeg"
             alt="Third slide"
           />
